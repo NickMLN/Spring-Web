@@ -1,4 +1,4 @@
-package com.curso.boot.demo_mvc.web.controller;
+package com.curso.boot.demo_mvc.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
