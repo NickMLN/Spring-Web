@@ -10,4 +10,4 @@ public class DemoMvcApplication {
 		SpringApplication.run(DemoMvcApplication.class, args);
 	}
 
-}
+ }
