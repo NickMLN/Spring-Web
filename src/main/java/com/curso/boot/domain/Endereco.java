@@ -1,10 +1,6 @@
 package com.curso.boot.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @SuppressWarnings("serial")
 @Entity
@@ -87,7 +83,5 @@ public class Endereco extends AbstractEntity<Long>{
 	public void setComplemento(String complemento) {
 		this.complemento = complemento;
 	}
-	
-	
 
 }

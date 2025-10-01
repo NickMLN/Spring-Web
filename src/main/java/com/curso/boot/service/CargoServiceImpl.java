@@ -1,13 +1,12 @@
 package com.curso.boot.service;
 
-import java.util.List;
-
+import com.curso.boot.dao.CargoDao;
+import com.curso.boot.domain.Cargo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.curso.boot.dao.CargoDao;
-import com.curso.boot.domain.Cargo;
+import java.util.List;
 
 @Service 
 @Transactional(readOnly = false)
@@ -45,10 +44,6 @@ public class CargoServiceImpl implements CargoService{
 
 	@Override
 	public boolean cargoTemFuncionarios(Long id) {
-		if(buscarPorId(id).getFuncionarios().isEmpty()) {
-			return false;
-		}
-		return true;
+		return !buscarPorId(id).getFuncionarios().isEmpty();
 	}
-
 }

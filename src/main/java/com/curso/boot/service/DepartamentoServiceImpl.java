@@ -1,17 +1,15 @@
 package com.curso.boot.service;
 
-import java.util.List;
-
+import com.curso.boot.dao.DepartamentoDao;
+import com.curso.boot.domain.Departamento;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.curso.boot.dao.DepartamentoDao;
-import com.curso.boot.domain.Departamento;
+import java.util.List;
 
 @Service
 public class DepartamentoServiceImpl implements DepartamentoService {
-
 	@Autowired
 	private DepartamentoDao dao;
 
@@ -55,6 +53,5 @@ public class DepartamentoServiceImpl implements DepartamentoService {
 
 			return true;
 		}
-
 	}
 }

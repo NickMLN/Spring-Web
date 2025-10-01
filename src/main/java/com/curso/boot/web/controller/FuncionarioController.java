@@ -17,5 +17,4 @@ public class FuncionarioController {
 	public String Listar() {
 		return "/funcionario/lista";
 	}
-
 }

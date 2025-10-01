@@ -1,15 +1,8 @@
 package com.curso.boot.domain;
 
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
-
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
 
 @SuppressWarnings("serial")
 @Entity
@@ -83,7 +76,4 @@ public class Funcionario extends AbstractEntity<Long>{
 	public void setCargo(Cargo cargo) {
 		this.cargo = cargo;
 	}
-	
-	
-
 }

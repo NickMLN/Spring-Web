@@ -1,8 +1,8 @@
 package com.curso.boot.service;
 
-import java.util.List;
-
 import com.curso.boot.domain.Departamento;
+
+import java.util.List;
 
 public interface DepartamentoService {
 	void salvar(Departamento departamento);
@@ -11,5 +11,4 @@ public interface DepartamentoService {
 	Departamento buscarPorId(Long id);
 	List<Departamento> buscarTodos();
 	boolean departamentoTemCargo(Long id);
-
 }

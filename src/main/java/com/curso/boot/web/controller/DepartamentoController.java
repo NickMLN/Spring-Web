@@ -1,5 +1,7 @@
 package com.curso.boot.web.controller;
 
+import com.curso.boot.domain.Departamento;
+import com.curso.boot.service.DepartamentoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -8,9 +10,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
-import com.curso.boot.domain.Departamento;
-import com.curso.boot.service.DepartamentoService;
 
 @Controller
 @RequestMapping("/departamentos")
@@ -60,5 +59,4 @@ public class DepartamentoController {
 		model.addAttribute("success", "Departamento Excluido com sucesso!");
 		return Listar(model);
 	}
-
 }
